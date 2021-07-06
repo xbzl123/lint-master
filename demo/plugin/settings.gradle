@@ -1,0 +1,7 @@
+include ':lib_lint_base'
+include ":lib_lint_client_v3_2"
+include ':lib_lint_client_v3_3'
+include ':lib_lint_client_v3_6'
+include ':lib_lint_client_v4_1'
+include ':lib_lint_client_v4_2'
+include ':lintplugin'

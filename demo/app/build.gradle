@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+apply plugin: 'IncrementLint'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.twlk.lint"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    lintChecks "com.jianghongkui.lint:rules:1.0.0"
+}

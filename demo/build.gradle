@@ -1,0 +1,41 @@
+buildscript {
+
+    apply from: '../config.gradle'
+
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+
+        maven { url MAVEN_URL }
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:${versions.androidPlugin}"
+        classpath deps.kotlin.plugin
+        classpath 'com.jianghongkui.lint:lintplugin:1.1.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+
+        maven { url MAVEN_URL }
+    }
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
+
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
