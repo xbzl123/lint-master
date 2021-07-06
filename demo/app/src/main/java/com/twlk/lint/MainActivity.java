@@ -34,40 +34,43 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
 
+/**
+ *
+ */
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    private Handler handler = new Handler();
+//    private Handler handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.e(TAG, "log for test");
+//        Log.e(TAG, "log for test");
 
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<String>(16);
 
         Color.parseColor("#FFFFFF");
 
-        new AsyncTask<String, Integer, String>() {
-
-            @Override
-            protected String doInBackground(String... strings) {
-                return null;
-            }
-        };
+//         new AsyncTask<String, Integer, String>() {
+//
+//            @Override
+//            protected String doInBackground(String... strings) {
+//                return null;
+//            }
+//        };
 
         int i = 0;
-        if (i > 0) {
-            if (i < 0) {
-                if (i == 0) {
-                    if (i < -1) {
-
-                    }
-                }
-            }
-        }
+//        if (i > 0) {
+//            if (i < 0) {
+//                if (i == 0) {
+//                    if (i < -1) {
+//
+//                    }
+//                }
+//            }
+//        }
     }
 }

@@ -24,6 +24,9 @@
 
 package com.twlk.lint;
 
+/**
+ *
+ */
 public class TestBean {
     public int number;
 
