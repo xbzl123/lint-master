@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<String> list = new ArrayList<String>(16);
 
-        Color.parseColor("#FFFFFF");
+//        Color.parseColor("#FFFFFF");
 
 //         new AsyncTask<String, Integer, String>() {
 //
