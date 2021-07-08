@@ -21,11 +21,10 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-
-apply from: '../../config.gradle'
+apply from: 'config.gradle'
 
 buildscript {
-    apply from: '../../config.gradle'
+    apply from: 'config.gradle'
 
     repositories {
         jcenter()
@@ -37,6 +36,16 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath deps.kotlin.plugin
+        classpath "com.android.tools.build:gradle:${versions.androidPlugin}"
+        classpath deps.kotlin.plugin    }
+}
+allprojects {
+    repositories {
+        jcenter()
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        maven { url 'https://maven.aliyun.com/repository/gradle-plugin' }
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        mavenCentral()
     }
 }
