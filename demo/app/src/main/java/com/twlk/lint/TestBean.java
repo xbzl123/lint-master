@@ -28,6 +28,8 @@ package com.twlk.lint;
  *
  */
 public class TestBean {
+    String name;
+
     public int number;
 
     public int getNumber() {

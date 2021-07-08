@@ -33,6 +33,7 @@ import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
 //        Log.e(TAG, "log for test");
 
-        ArrayList<String> list = new ArrayList<String>(16);
+        List<String> list = new ArrayList<String>(16);
 
 //        Color.parseColor("#FFFFFF");
 
