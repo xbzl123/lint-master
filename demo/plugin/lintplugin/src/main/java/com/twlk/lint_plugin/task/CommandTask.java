@@ -103,7 +103,7 @@ public class CommandTask extends DefaultTask {
             if (!lastVersion.equals(version)) {
                 setLastVersion(version, extension);
                 Collection<File> versionChangedFile = cmd.getVersionFileList(version, lastVersion);
-                IncrementLogger.addLog("the files changed by each commit will ba added to check list -" + versionChangedFile.size());
+                IncrementLogger.addLog("the files changed by each commit will be added to check list -" + versionChangedFile.size());
 
                 Collection<String> cs = getFileWithoutDir(versionChangedFile);
                 if (cs != null && !cs.isEmpty()) {
