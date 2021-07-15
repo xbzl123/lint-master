@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         new File("");
 //        Log.e(TAG, "log for test");
+        List<String> devicelist = new ArrayList<String>();
 
         List<String> list = new ArrayList<String>(16);
 
