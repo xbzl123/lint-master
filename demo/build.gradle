@@ -35,7 +35,10 @@ tasks.withType(JavaCompile) {
     options.encoding = "UTF-8"
 }
 
-
+delete fileTree("increment").matching {
+    include "**/*.txt"
+    include "*.html"
+}
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
