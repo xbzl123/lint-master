@@ -27,6 +27,9 @@ package com.twlk.lint;
 import java.util.concurrent.atomic.AtomicReference;
 
 
+/**
+ *
+ */
 public class TestBean {
     String name;
 
