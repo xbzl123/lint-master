@@ -55,6 +55,10 @@ public class IncrementLintExtension {
         File xmlFile = new File(BASE_PATH, "lint.xml");
         lintXmlPath = xmlFile.getAbsolutePath();
         lintConfigFile = new File(BASE_PATH, "lint.config");
+        File file = new File(BASE_PATH, prefix + "Lint.html");
+        if(file.exists()){
+            file.delete();
+        }
         if (options != null) {
             options.lintXml(xmlFile);
             options.htmlOutput(new File(BASE_PATH, prefix + "Lint.html"));
