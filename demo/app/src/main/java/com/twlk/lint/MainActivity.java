@@ -58,13 +58,13 @@ public class MainActivity extends AppCompatActivity {
 
 //        Color.parseColor("#FFFFFF");
 
-//         new AsyncTask<String, Integer, String>() {
-//
-//            @Override
-//            protected String doInBackground(String... strings) {
-//                return null;
-//            }
-//        };
+         new AsyncTask<String, Integer, String>() {
+
+            @Override
+            protected String doInBackground(String... strings) {
+                return null;
+            }
+        };
 
         int i = 0;
         if (i > 0) {
