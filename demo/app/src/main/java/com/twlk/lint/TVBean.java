@@ -8,14 +8,14 @@ public class TVBean {
         this.number = number;
         this.name = name;
         int i = 0;
-        if (i > 0) {
-            if (i < 0) {
-                if (i == 0) {
-                    if (i < -1) {
-
-                    }
-                }
-            }
-        }
+//        if (i > 0) {
+//            if (i < 0) {
+//                if (i == 0) {
+//                    if (i < -1) {
+//
+//                    }
+//                }
+//            }
+//        }
     }
 }
