@@ -50,31 +50,31 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new File("");
+//        new File("");
 //        Log.e(TAG, "log for test");
-        List<String> devicelist = new ArrayList<String>();
-
-        List<String> list = new ArrayList<String>(16);
+//        List<String> devicelist = new ArrayList<String>();
+//
+//        List<String> list = new ArrayList<String>(16);
 
 //        Color.parseColor("#FFFFFF");
 
-         new AsyncTask<String, Integer, String>() {
-
-            @Override
-            protected String doInBackground(String... strings) {
-                return null;
-            }
-        };
-
-        int i = 0;
-        if (i > 0) {
-            if (i < 0) {
-                if (i == 0) {
-                    if (i < -1) {
-
-                    }
-                }
-            }
-        }
+//         new AsyncTask<String, Integer, String>() {
+//
+//            @Override
+//            protected String doInBackground(String... strings) {
+//                return null;
+//            }
+//        };
+//
+//        int i = 0;
+//        if (i > 0) {
+//            if (i < 0) {
+//                if (i == 0) {
+//                    if (i < -1) {
+//
+//                    }
+//                }
+//            }
+//        }
     }
 }
