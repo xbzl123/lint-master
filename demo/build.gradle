@@ -36,7 +36,7 @@ tasks.withType(JavaCompile) {
 }
 
 delete fileTree("increment").matching {
-    include "**/*.txt"
+//    include "**/*.txt"
     include "*.html"
 }
 task clean(type: Delete) {
