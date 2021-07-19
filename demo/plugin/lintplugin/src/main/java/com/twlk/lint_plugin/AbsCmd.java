@@ -210,8 +210,11 @@ public abstract class AbsCmd {
      * git 命令
      */
     private static class Git extends AbsCmd {
+        //命令用于显示工作目录和暂存区的状态
         private final static String CHANGED_COM = "git status -s --no-renames";
+        //命令用于显示历史版本记录
         private final static String VERSION_COM = "git log --pretty=format:%h -1";
+        //命令用于比较当前版本和上一个版本的那些文件被修改
         private final static String VERSION_ChANGE_COM = "git diff --name-only %1s %2s %3s";
 
         Git(File projectDir) {

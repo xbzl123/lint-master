@@ -95,7 +95,7 @@ public class CommandTask extends DefaultTask {
             }
 
             HashSet<String> set = new HashSet<>();
-            //获取修改文件
+            //获取修改文件列表
             Collection<String> fileList = getFileWithoutDir(filterFiles(cmd.getFileStatusList()));
             if (fileList != null) {
                 set.addAll(fileList);
@@ -143,7 +143,7 @@ public class CommandTask extends DefaultTask {
         }
         extension.setLastVersion(version);
     }
-
+    //保存修改的文件列表到本地
     void addChangedFiles(File dest, Collection<String> changeFiles) {
         if (changeFiles == null || changeFiles.size() == 0) {
             try {

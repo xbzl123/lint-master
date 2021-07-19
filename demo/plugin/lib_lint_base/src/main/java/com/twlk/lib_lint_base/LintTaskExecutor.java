@@ -57,6 +57,9 @@ public class LintTaskExecutor {
         Collection<File> checkFileList = getChangedFiles(extension.changedInfoFile, extension.versionFile);
         if (checkFileList != null && !checkFileList.isEmpty()) {
             IncrementLogger.addLog("the size of files that's need to be checked is %1d", checkFileList.size());
+            for (File file: checkFileList) {
+                IncrementLogger.addLog("that's need to be checked is %1s", file.getPath());
+            }
         } else {
             IncrementLogger.addLog("not need check");
             IncrementLogger.flush();
